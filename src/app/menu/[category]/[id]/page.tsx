@@ -11,11 +11,14 @@ interface Dish {
   category: string;
 }
 
-export default async function DishDetailPage({
-  params,
-}: {
-  params: { category: string; id: string };
-}) {
+interface PageProps {
+  params: {
+    category: string;
+    id: string;
+  };
+}
+
+export default async function DishDetailPage({ params }: PageProps) {
   const res = await fetch("http://localhost:3000/api/dishes", {
     cache: "no-store",
   });

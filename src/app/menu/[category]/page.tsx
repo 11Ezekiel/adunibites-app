@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import DishCard from "@/app/components/DishCard"; // Adjust the path if needed
+import DishCard from "@/app/components/DishCard";
 
 interface Dish {
   id: number;
